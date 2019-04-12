@@ -16,6 +16,18 @@
         .box {
             height: 200px,
         }
+
+        .row>div {
+            background-color: #ddd;
+            padding: 10px;
+            border: 1px solid #fff;
+            line-height: 60px;
+        }
+
+        .shadows>div {
+            background: lightblue;
+            height: 120px;
+        }
     </style>
 </head>
 
@@ -44,7 +56,7 @@
     <hr>
     <br>
 
-    <dov class="container">
+    <div class="container">
         <h5 class="blue darken-1">Be yourself, everyone else is already taken.</h5>
         <h5 class="orange darken-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At alias laborum eos
             dignissimos soluta officia!</h5>
@@ -53,7 +65,7 @@
         <h5 class="teal darken-2 yellow-text text-lighten-3">Lorem ipsum dolor sit amet.</h5>
         <h5 class="yellow lighten-3 purple-text text-darken-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
             Corporis corrupti esse quo!</h5>
-    </dov>
+    </div>
 
     <hr>
     <br>
@@ -69,8 +81,130 @@
         <h5>Vertical alignment</h5>
     </div>
 
+    <div class="container">
+        <p class="truncate">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus maxime quas aperiam ipsum dolor beatae,
+            voluptas quos? Aperiam saepe fugit architecto est minus culpa explicabo eius quasi labore, vitae eos.
+        </p>
+    </div>
     <br>
     <br>
+
+    <div class="container">
+        <h4>Buttons</h4>
+        <a href="#" class="btn waves-effect waves-light">Normal button</a>
+        <a href="#" class="btn-small">Small button</a>
+        <a href="#" class="btn-large">Large button</a>
+        <a href="#" class="btn indigo">Indigo button</a>
+        <a href="#" class="btn disabled">Disabled button</a>
+
+        <h4>Floating Button</h4>
+        <a href="#" class="btn-floating pink pulse">floating button</a>
+        <h4>Other elements</h4>
+        <div class="btn">I'm a div tag</div>
+    </div>
+
+    <div class="container">
+        <h4>Icons</h4>
+        <i class="material-icons red-text">error</i>
+        <i class="material-icons yellow-text">warning</i>
+        <i class="material-icons grey-text">cloud</i>
+        <i class="material-icons blue-text">folder</i>
+
+        <h4>Icons on Buttons</h4>
+        <a href="#" class="btn indigo">
+            <span>Send</span>
+            <i class="material-icons right">send</i>
+        </a>
+
+        <a href="#" class="btn pink">
+            <span>Email</span>
+            <i class="material-icons left">email</i>
+        </a>
+
+        <h4>Icons on Floating Buttons</h4>
+        <a href="#" class="btn-floating blue pulse">
+            <i class="material-icons">add</i>
+        </a>
+        <a href="#" class="btn-floating pink pulse">
+            <i class="material-icons">remove</i>
+        </a>
+        <a href="#" class="btn-floating orange pulse">
+            <i class="material-icons">edit</i>
+        </a>
+    </div>
+
+    <div class="container">
+        <h4>Grids</h4>
+
+        <div class="row">
+            <!-- s stands for small size screen and up -->
+            <div class="col s3">content</div>
+            <div class="col s3">content</div>
+            <div class="col s3">content</div>
+            <div class="col s3">content</div>
+        </div>
+        <div class="row">
+            <!-- m stands for medium size screen and up -->
+            <div class="col s6 m3">content</div>
+            <div class="col s6 m3">content</div>
+            <div class="col s6 m3">content</div>
+            <div class="col s6 m3">content</div>
+        </div>
+        <div class="row">
+            <!-- l stands for large size screen and up -->
+            <div class="col s12 m6 l4">content</div>
+            <div class="col s12 m6 l4">content</div>
+            <div class="col s12 m6 l4">content</div>
+            <div class="col s12 m6 l4">content</div>
+            <div class="col s12 m6 l4">content</div>
+            <div class="col s12 m6 l4">content</div>
+        </div>
+        <div class="row">
+            <!-- xl stands for large size screen and up -->
+            <div class="col s12 m6 l4 xl2">content</div>
+            <div class="col s12 m6 l4 xl2">content</div>
+            <div class="col s12 m6 l4 xl2">content</div>
+            <div class="col s12 m6 l4 xl2">content</div>
+            <div class="col s12 m6 l4 xl2">content</div>
+            <div class="col s12 m6 l4 xl2">content</div>
+        </div>
+        <div class="row">
+            <div class="col s12 m8">content</div>
+            <div class="col s12 m4">content</div>
+            <div class="col s12 m4">content</div>
+            <div class="col s12 m8">content</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h4>Shadows & Depth</h4>
+        <div class="row shadows">
+            <div class="col s2">
+                <div></div>
+            </div>
+            <div class="col s2">
+                <div class="z-depth-1"></div>
+            </div>
+            <div class="col s2">
+                <div class="z-depth-2"></div>
+            </div>
+            <div class="col s2">
+                <div class="z-depth-3"></div>
+            </div>
+            <div class="col s2">
+                <div class="z-depth-4"></div>
+            </div>
+            <div class="col s2">
+                <div class="z-depth-5"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div style="height: 200px"></div>
 </body>
 
 </html>

@@ -9,15 +9,14 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
     <title>Materialize</title>
     <style>
         .box {
             height: 200px,
         }
 
-        .row>div {
+        .grid-column-self-added>div {
             background-color: #ddd;
             padding: 10px;
             border: 1px solid #fff;
@@ -28,10 +27,43 @@
             background: lightblue;
             height: 120px;
         }
+
+        .badge {
+            position: relative;
+            top: 30px;
+            right: 25px;
+        }
     </style>
 </head>
 
 <body>
+    <nav class="nav-wraper indigo">
+        <div class="container">
+            <a href="#" class="brand-logo">brand-logo</a>
+            <a href="#" class="sidenav-trigger" data-target="mobile-linksss">
+                <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#" class="btn-floating blue">
+                        <i class="material-icons">notifications</i>
+                    </a></li>
+                <!-- use css in <head> tag to position badge -->
+                <li><span class="badge red white-text new">5</span></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-linksss">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Login</a></li>
+    </ul>
+
     <h1>Materialize h1</h1>
     <h2>Materialize h2</h2>
     <h3>Materialize h3</h3>
@@ -137,21 +169,21 @@
     <div class="container">
         <h4>Grids</h4>
 
-        <div class="row">
+        <div class="row grid-column-self-added">
             <!-- s stands for small size screen and up -->
             <div class="col s3">content</div>
             <div class="col s3">content</div>
             <div class="col s3">content</div>
             <div class="col s3">content</div>
         </div>
-        <div class="row">
+        <div class="row grid-column-self-added">
             <!-- m stands for medium size screen and up -->
             <div class="col s6 m3">content</div>
             <div class="col s6 m3">content</div>
             <div class="col s6 m3">content</div>
             <div class="col s6 m3">content</div>
         </div>
-        <div class="row">
+        <div class="row grid-column-self-added">
             <!-- l stands for large size screen and up -->
             <div class="col s12 m6 l4">content</div>
             <div class="col s12 m6 l4">content</div>
@@ -160,7 +192,7 @@
             <div class="col s12 m6 l4">content</div>
             <div class="col s12 m6 l4">content</div>
         </div>
-        <div class="row">
+        <div class="row grid-column-self-added">
             <!-- xl stands for large size screen and up -->
             <div class="col s12 m6 l4 xl2">content</div>
             <div class="col s12 m6 l4 xl2">content</div>
@@ -169,7 +201,7 @@
             <div class="col s12 m6 l4 xl2">content</div>
             <div class="col s12 m6 l4 xl2">content</div>
         </div>
-        <div class="row">
+        <div class="row grid-column-self-added">
             <div class="col s12 m8">content</div>
             <div class="col s12 m4">content</div>
             <div class="col s12 m4">content</div>
@@ -201,10 +233,111 @@
         </div>
     </div>
 
+    <div class="container">
+        <h4>Cards</h4>
+        <div class="row">
+            <div class="col s12 l6">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="/img/IMG_2023.JPG" />
+                        <a href="#" class="halfway-fab btn-floating right pink">
+                            <i class="material-icons">favorite</i>
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">card-title</span>
+                        <p>card-content. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, perspiciatis?
+                        </p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">More photos</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 l6">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-title">title</div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur quaerat, reprehenderit id
+                            est blanditiis incidunt at consectetur recusandae molestiae corporis sint inventore, maxime
+                            dignissimos voluptatum accusamus provident distinctio tenetur debitis?</p>
+                        <a href="#" class="halfway-fab btn-floating right">
+                            <i class="material-icons">favorite</i>
+                        </a>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">More details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h4>Collection</h4>
+        <ul class="collection with-header">
+            <li class="collection-header">
+                <h5>Header</h5>
+            </li>
+            <li class="collection-item avatar">
+                <i class="material-icons blue circle">person</i>
+                <span class="title">Allen</span>
+                <a href="#" class="secondary-content">
+                    <i class="material-icons blue-text">edit</i>
+                </a>
+            </li>
+            <li class="collection-item">
+                <span>Dan</span>
+                <p class="grey-text">black belt</p>
+                <a href="#" class="secondary-content">
+                    <i class="material-icons pink-text">email</i>
+                </a>
+            </li>
+            <li class="collection-item">Eric</li>
+            <li class="collection-item">Liquid</li>
+            <li class="collection-item">123</li>
+        </ul>
+    </div>
+
+
+    <div class="container">
+        <h2>Modals</h2>
+
+        <!-- activate in JQuery -->
+        <a href="#terms" class="btn orange modal-trigger">Terms & Conditions</a>
+
+        <div class="modal" id="terms">
+            <div class="modal-content">
+                <h4>Modal title</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil incidunt quia culpa blanditiis!
+                    Natus officiis porro pariatur sequi excepturi mollitia maxime modi amet beatae, aspernatur minus
+                    a. Perspiciatis, delectus quidem.</p>
+                <div class="modal-footer">
+                    <a href="#" class="modal-close btn orange">Agree & Close</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 
 
     <div style="height: 200px"></div>
+
+    <script src="https://code.jquery.com/jquery-3.4.0.js"
+        integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+        })
+
+        $(document).ready(function () {
+            $('.modal').modal();
+        })
+    </script>
 </body>
 
 </html>
